@@ -1,0 +1,781 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/shaikshakeera72-lgtm/Payment-gateway-service/blob/main/Nasscom%20assignment_1\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "yh4cVwL1l97a"
+      },
+      "source": [
+        "# NumPy Practice Exercises\n",
+        "\n",
+        "Solve each question in the code cell below it. Do not just re-run the lab examples — use **different numbers/data** than what was shown in class so you are actually writing the logic yourself.\n",
+        "\n",
+        "Run each cell with **Shift + Enter** and check that your output makes sense before moving to the next question."
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "9HBY3RbRl97f"
+      },
+      "source": [
+        "### Q1. Creating a 1-D array\n",
+        "Create a 1-D NumPy array containing 6 numbers of your choice. Print the array and print its type using `type()`."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "PLR-OPnxl97h",
+        "outputId": "11b1ec0c-ebfc-4ed1-c4ae-ff6fb5ad1f02"
+      },
+      "source": [
+        "# Write your code here\n",
+        "import numpy as np\n",
+        "arr=np.array([10,20,30,40,50,60])\n",
+        "print(arr)\n",
+        "print(type(arr))\n"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[10 20 30 40 50 60]\n",
+            "<class 'numpy.ndarray'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "YPyogyaal97j"
+      },
+      "source": [
+        "### Q2. Creating a 2-D array\n",
+        "Create a 2-D NumPy array with 3 rows and 2 columns (any numbers). Print the array."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "JTD_KlTYl97k",
+        "outputId": "9453bbff-ce76-4840-bef7-eeed7f84dfe4"
+      },
+      "source": [
+        "# Write your code here\n",
+        "import numpy as np\n",
+        "arr=np.array([[1,2,],[3,4],[5,6]])\n",
+        "print(arr)\n"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[[1 2]\n",
+            " [3 4]\n",
+            " [5 6]]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "jk4VYCY5l97l"
+      },
+      "source": [
+        "### Q3. Creating a 3-D array\n",
+        "Create a 3-D NumPy array made up of two 2x3 matrices (2 blocks, each with 2 rows and 3 columns). Print the array."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "GPm58QXCl97l",
+        "outputId": "94ee6a7d-6bc9-43f3-b92a-866ac456aff8"
+      },
+      "source": [
+        "# Write your code here\n",
+        "import numpy as np\n",
+        "arr=np.array([[[1,2,3],[4,5,6]],[[7,8,9],[10,11,12]]])\n",
+        "print(arr)\n"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[[[ 1  2  3]\n",
+            "  [ 4  5  6]]\n",
+            "\n",
+            " [[ 7  8  9]\n",
+            "  [10 11 12]]]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "dknXzrjrl97l"
+      },
+      "source": [
+        "### Q4. Checking the number of dimensions\n",
+        "Using the three arrays you created in Q1, Q2, and Q3, print the number of dimensions of each using the `.ndim` attribute."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "B1iXXjSMl97m",
+        "outputId": "7a3a2d74-c9ad-4133-b2ef-b771978847c9"
+      },
+      "source": [
+        "# Write your code here\n",
+        "import numpy as np\n",
+        "Q1=(1,2)\n",
+        "Q2=([3,4])\n",
+        "Q3=([[5,6],[7,8]])\n",
+        "print(arr)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[[[ 1  2  3]\n",
+            "  [ 4  5  6]]\n",
+            "\n",
+            " [[ 7  8  9]\n",
+            "  [10 11 12]]]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "cPhWT6Lwl97n"
+      },
+      "source": [
+        "### Q5. Accessing elements with indexing\n",
+        "Create a 2-D array with 2 rows and 5 columns of your own numbers.\n",
+        "1. Print the 3rd element of the 1st row using positive indexing.\n",
+        "2. Print the last element of the 2nd row using **negative** indexing."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "nO8D4QRPl97n",
+        "outputId": "0e0c8909-4854-4ca6-dbfc-dbb57c59839e"
+      },
+      "source": [
+        "# Write your code here\n",
+        "import numpy as np\n",
+        "arr=np.array([[1,2,3,4,5],[6,7,8,9,10]])\n",
+        "print(arr[0,2])\n",
+        "print(arr[1,-1])"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "3\n",
+            "10\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "54YZkqKnl97o"
+      },
+      "source": [
+        "### Q6. Accessing elements in a 3-D array\n",
+        "Using the 3-D array you created in Q3, access and print one specific element using three indices, e.g. `arr[block, row, col]`."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Yc2_vMVel97o",
+        "outputId": "e6d19bd3-594a-4e99-ee26-d9d7f54d378f"
+      },
+      "source": [
+        "# Write your code here\n",
+        "import numpy as np\n",
+        "Q3=np.array([[[1,2,3],[4,5,6]],[[7,8,9],[10,11,12]]])\n",
+        "print(Q3[1,0,2])"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "9\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "tnsFsAPEl97p"
+      },
+      "source": [
+        "### Q7. Checking data type\n",
+        "Create one NumPy array of integers and one NumPy array that contains at least one decimal number. Print the `.dtype` of each and explain in a comment why they are different."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "3J5T_oBMl97p",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "d3f0a6c1-4d23-4644-811b-94e34e858202"
+      },
+      "source": [
+        "# Write your code here\n",
+        "import numpy as np\n",
+        "arr1 = np.array([1, 2, 3, 4, 5])\n",
+        "arr2 = np.array([1.5, 2.5, 3.5, 4.5])\n",
+        "print(arr1.dtype)\n",
+        "print(arr2.dtype)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "int64\n",
+            "float64\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "irmVLS84l97q"
+      },
+      "source": [
+        "### Q8. Copy vs View\n",
+        "Create a 1-D array. Make a **copy** of it using `.copy()` and a **view** of it using `.view()`. Change the first element of the original array, then print the original array, the copy, and the view. In a comment, explain what you observe and why."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "9aiajg9xl97q",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "09a4ef4b-61c8-4908-ab15-6babc9b5144d"
+      },
+      "source": [
+        "# Write your code here\n",
+        "import numpy as np\n",
+        "arr = np.array([1, 2, 3, 4, 5])\n",
+        "copy_arr = arr.copy()\n",
+        "view_arr = arr.view()\n",
+        "arr[0] = 100\n",
+        "print(\"Original:\", arr)\n",
+        "print(\"Copy:\", copy_arr)\n",
+        "print(\"View:\", view_arr)"
+      ],
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Original: [100   2   3   4   5]\n",
+            "Copy: [1 2 3 4 5]\n",
+            "View: [100   2   3   4   5]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "rQAMGjfpl97q"
+      },
+      "source": [
+        "### Q9. Shape of an array\n",
+        "1. Create a 2-D array with 3 rows and 4 columns and print its `.shape`.\n",
+        "2. Create a 1-D array of 4 numbers with `ndmin=5` and print both the array and its shape."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "Trk985nNl97r",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "563ed78d-0b93-480f-83b7-78ae7966b70a"
+      },
+      "source": [
+        "# Write your code here\n",
+        "import numpy as np\n",
+        "arr=np.array([[1,2,3,4],[5,6,7,8],[9,10,11,12]])\n",
+        "print(\"array shape:\",arr.shape)\n",
+        "arr_1d = np.array([1, 2, 3, 4], ndmin=5)\n",
+        "print(\"Array:\", arr_1d)\n",
+        "print(\"Shape:\", arr_1d.shape)\n",
+        "\n",
+        "\n",
+        "\n"
+      ],
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "array shape: (3, 4)\n",
+            "Array: [[[[[1 2 3 4]]]]]\n",
+            "Shape: (1, 1, 1, 1, 4)\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "MRXsdwFzl97r"
+      },
+      "source": [
+        "### Q10. Reshaping arrays\n",
+        "Create a 1-D array with 15 elements. Reshape it into a 2-D array with 3 rows and 5 columns using `.reshape()`. Print the result."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "9n6d0CT7l97s",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "74ca4c12-9b15-474e-fa40-dae2aafee7a5"
+      },
+      "source": [
+        "# Write your code here\n",
+        "import numpy as np\n",
+        "arr = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15])\n",
+        "reshaped_arr = arr.reshape(3, 5)\n",
+        "print(reshaped_arr)\n",
+        "\n"
+      ],
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[[ 1  2  3  4  5]\n",
+            " [ 6  7  8  9 10]\n",
+            " [11 12 13 14 15]]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "vf--5yxWl97s"
+      },
+      "source": [
+        "### Q11. Linear algebra with NumPy\n",
+        "Solve the following system of equations using `np.linalg.solve()`:\n",
+        "\n",
+        "2x + y = 11\n",
+        "\n",
+        "x + 3y = 18\n",
+        "\n",
+        "Print the values of x and y."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "1vL5zUSfl97s",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "6794c8b4-ddb9-4cae-b4ed-182fac8b004d"
+      },
+      "source": [
+        "# Write your code here\n",
+        "import numpy as np\n",
+        "A=np.array([[2,1],[1,3]])\n",
+        "B=np.array([11,18])\n",
+        "x,y=np.linalg.solve(A,B)\n",
+        "print(\"x=\",x)\n",
+        "print(\"y=\",y)"
+      ],
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "x= 3.0\n",
+            "y= 5.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "CrIDCSupl97s"
+      },
+      "source": [
+        "### Q12. arange, zeros, and ones\n",
+        "1. Use `np.zeros()` to create a 4x2 array of zeros.\n",
+        "2. Use `np.ones()` to create a 3x3 array of ones.\n",
+        "3. Use `np.arange()` to create an array of numbers from 5 to 30 with a step of 5.\n",
+        "\n",
+        "Print all three."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "bjw6bMp7l97t",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "c3cb49e9-63e4-4892-a5c4-6276d6f9749f"
+      },
+      "source": [
+        "# Write your code here\n",
+        "import numpy as np\n",
+        "zeros_array = np.zeros((4, 2))\n",
+        "print(\"Zeros array:\")\n",
+        "print(zeros_array)\n",
+        "ones_array = np.ones((3, 3))\n",
+        "print(\"\\nOnes array:\")\n",
+        "print(ones_array)\n",
+        "arange_array = np.arange(5, 31, 5)\n",
+        "print(\"\\nArange array:\")\n",
+        "print(arange_array)\n",
+        "\n"
+      ],
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Zeros array:\n",
+            "[[0. 0.]\n",
+            " [0. 0.]\n",
+            " [0. 0.]\n",
+            " [0. 0.]]\n",
+            "\n",
+            "Ones array:\n",
+            "[[1. 1. 1.]\n",
+            " [1. 1. 1.]\n",
+            " [1. 1. 1.]]\n",
+            "\n",
+            "Arange array:\n",
+            "[ 5 10 15 20 25 30]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "w4x9ftdPl97t"
+      },
+      "source": [
+        "### Q13. Why NumPy is faster than plain Python\n",
+        "Create two Python lists of 500,000 numbers each. Time how long it takes to add them element-by-element using a Python loop (or list comprehension). Then convert both lists to NumPy arrays and time how long it takes to add them using `+`. Print both times and, in a comment, state which was faster and roughly by how much."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "4ynZBwwOl97t",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "c4be9c6a-1ec4-4e0d-8bc3-145ca36d004d"
+      },
+      "source": [
+        "# Write your code here\n",
+        "import time\n",
+        "import numpy as np\n",
+        "list1 = list(range(500_000))\n",
+        "list2 = list(range(500_000))\n",
+        "start = time.perf_counter()\n",
+        "result_list = [a + b for a, b in zip(list1, list2)]\n",
+        "python_time = time.perf_counter() - start\n",
+        "array1 = np.array(list1)\n",
+        "array2 = np.array(list2)\n",
+        "start = time.perf_counter()\n",
+        "result_array = array1 + array2\n",
+        "numpy_time = time.perf_counter() - start\n",
+        "print(\"Python list time:\", python_time, \"seconds\")\n",
+        "print(\"NumPy array time:\", numpy_time, \"seconds\")\n",
+        "print(\"NumPy is roughly\", python_time / numpy_time, \"times faster.\")\n",
+        "\n",
+        "\n"
+      ],
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Python list time: 0.04727704300012192 seconds\n",
+            "NumPy array time: 0.00266919799992138 seconds\n",
+            "NumPy is roughly 17.712077935587562 times faster.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "VmseMGdDl97u"
+      },
+      "source": [
+        "### Q14. Vectors vs matrices\n",
+        "Create a 1-D NumPy array representing a single customer's features: `[height_cm, weight_kg, age]` (make up your own values). Then create a 2-D NumPy array representing 4 different customers with the same 3 features each. Print the `.shape` and `.ndim` of both arrays."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "dtZAEV-Ml97u",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "0be964e6-cca1-4c8b-85fb-296c3001ed1d"
+      },
+      "source": [
+        "# Write your code here\n",
+        "import numpy as np\n",
+        "customer = np.array([175, 70, 25])\n",
+        "customers = np.array([[175, 70, 25],[168, 62, 30],[182, 85, 28],[160, 55, 22]])\n",
+        "print(\"Single customer:\")\n",
+        "print(customer)\n",
+        "print(\"Shape:\", customer.shape)\n",
+        "print(\"Dimensions:\", customer.ndim)\n",
+        "print(\"\\n4 customers:\")\n",
+        "print(customers)\n",
+        "print(\"Shape:\", customers.shape)\n",
+        "print(\"Dimensions:\", customers.ndim)\n"
+      ],
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Single customer:\n",
+            "[175  70  25]\n",
+            "Shape: (3,)\n",
+            "Dimensions: 1\n",
+            "\n",
+            "4 customers:\n",
+            "[[175  70  25]\n",
+            " [168  62  30]\n",
+            " [182  85  28]\n",
+            " [160  55  22]]\n",
+            "Shape: (4, 3)\n",
+            "Dimensions: 2\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "ZQc9_HMel97v"
+      },
+      "source": [
+        "### Q15. Indexing and slicing to build X and y\n",
+        "Create a 2-D array with 6 rows and 3 columns, where the last column is a target label (0 or 1) and the first two columns are features (make up your own numbers).\n",
+        "1. Print the first 3 rows only.\n",
+        "2. Print only the first column, for all rows.\n",
+        "3. Split the array into `X` (all columns except the last) and `y` (only the last column), and print both."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "c3NusK2Pl97w",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "75729123-3afe-409f-838b-09c56098a75b"
+      },
+      "source": [
+        "# Write your code here\n",
+        "import numpy as np\n",
+        "data = np.array([\n",
+        "    [10, 20, 0],\n",
+        "    [15, 25, 1],\n",
+        "    [12, 18, 0],\n",
+        "    [20, 30, 1],\n",
+        "    [25, 35, 1],\n",
+        "    [8,  15, 0]\n",
+        "])\n",
+        "print(\"First 3 rows:\")\n",
+        "print(data[:3])\n",
+        "print(\"\\nFirst column:\")\n",
+        "print(data[:, 0])\n",
+        "X = data[:, :-1]\n",
+        "y = data[:, -1]\n",
+        "print(\"\\nX (features):\")\n",
+        "print(X)\n",
+        "print(\"\\ny (target):\")\n",
+        "print(y)\n"
+      ],
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "First 3 rows:\n",
+            "[[10 20  0]\n",
+            " [15 25  1]\n",
+            " [12 18  0]]\n",
+            "\n",
+            "First column:\n",
+            "[10 15 12 20 25  8]\n",
+            "\n",
+            "X (features):\n",
+            "[[10 20]\n",
+            " [15 25]\n",
+            " [12 18]\n",
+            " [20 30]\n",
+            " [25 35]\n",
+            " [ 8 15]]\n",
+            "\n",
+            "y (target):\n",
+            "[0 1 0 1 1 0]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "DDi9JB4Dl97w"
+      },
+      "source": [
+        "### Q16. Vectorized operations and boolean masking\n",
+        "Create a 1-D NumPy array of 8 exam scores (0-100) of your choice. Without using any loop:\n",
+        "1. Add 5 bonus marks to every score and print the result.\n",
+        "2. Print a boolean array showing which scores are 50 or above.\n",
+        "3. Print only the scores that are 50 or above using boolean masking."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "IagqPOHHl97w",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "78937c03-7478-45f9-ea82-86d7efcbe72e"
+      },
+      "source": [
+        "# Write your code here\n",
+        "import numpy as np\n",
+        "scores = np.array([45, 72, 88, 39, 56, 91, 48, 65])\n",
+        "bonus_scores = scores + 5\n",
+        "print(\"Scores after adding 5 bonus marks:\")\n",
+        "print(bonus_scores)\n",
+        "passed = scores >= 50\n",
+        "print(\"\\nBoolean array:\")\n",
+        "print(passed)\n",
+        "print(\"\\nScores 50 or above:\")\n",
+        "print(scores[scores >= 50])\n"
+      ],
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Scores after adding 5 bonus marks:\n",
+            "[50 77 93 44 61 96 53 70]\n",
+            "\n",
+            "Boolean array:\n",
+            "[False  True  True False  True  True False  True]\n",
+            "\n",
+            "Scores 50 or above:\n",
+            "[72 88 56 91 65]\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
